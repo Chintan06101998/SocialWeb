@@ -7,6 +7,7 @@ import Add from "./components/Add";
 import { useState } from "react";
 
 function App() {
+  console.log("Chintan");
   const [mode, setMode] = useState("light");
 
   const darkTheme = createTheme({
@@ -19,7 +20,7 @@ function App() {
       <Box bgcolor={"background.default"} color={"text.primary"}>
         <Navbar />
         <Stack direction="row" spacing={2} justifyContent="space-between">
-        <Sidebar setMode={setMode} mode={mode}/>
+          <Sidebar setMode={setMode} mode={mode} />
           <Feed />
           <Rightbar />
         </Stack>
